@@ -75,7 +75,7 @@ const drawer = ref(false);
 
 const links = [
   { text: "Home", to: "/" },
-  { text: "Partner", to: "/partner" },
+  { text: "Partners", to: "/partner" },
   { text: "Expertise", to: "/expertise_dashbord" },
   { text: "Services", to: "/dashbord_service" },
   { text: "Research", to: "/dadhbord_research" },
