@@ -1,0 +1,287 @@
+{
+
+  "about_us": [
+    {
+      "id": 1,
+      "title": "Who We Are",
+      "description": "To provide the best food delivery service in the country"
+    },
+    {
+      "id": 2,
+      "title": "Our Vision",
+      "description": "To be the leading food delivery service in the world"
+    },
+    {
+      "id": 3,
+      "title": "Our Mission",
+      "description": "Customer satisfaction, Quality service, Integrity, Innovation"
+    }
+  ],
+  "post_categories": [
+    {
+      "id": 1,
+      "name": "Technology"
+    },
+    {
+      "id": 2,
+      "name": "Health"
+    },
+    {
+      "id": 3,
+      "name": "Lifestyle"
+    }
+  ],
+  "research_innovation": [
+    {
+      "id": 1,
+      "title": "Research on Food Safety",
+      "description": "A comprehensive study on food safety standards and practices."
+    },
+    {
+      "id": 2,
+      "title": "Innovation in Food Packaging",
+      "description": "Exploring new materials and designs for sustainable food packaging."
+    }
+  ],
+  "partners": [
+    {
+      "id": 1,
+      "title": "Ministry of Industry, Technology and Innovation",
+      "phone": "+855 86 638 641",
+      "email": "phalsophanin@gmail.com",
+      "address": "45 Preah Norodom Boulevard, Sangkat Phsar Thmey III, Khan Daun Penh, Phnom Penh, 120203",
+      "partner_link": "https://misti.gov.kh/",
+      "partner_description": "Leading company in food technology.",
+      "image": "./image/minitry.png",
+      "video": "https://www.example.com/video_a"
+    },
+    {
+      "id": 2,
+      "title": "National University of Battambang (NUBB)",
+      "phone": "+855 88 242 4698",
+      "email": "srean.pao@nubb.edu.kh",
+      "address": "36P9+GV5, University Rd, Krong Battambang",
+      "partner_link": "https://nubb.edu.kh/en/",
+      "partner_description": "Innovative solutions for food delivery.",
+      "image": "./image/nubb.png",
+      "video": "https://www.example.com/video_b"
+    },
+     {
+      "id": 3,
+      "title": "Fisheries Administration",
+      "phone": "+855 88 242 4698",
+      "email": "phalsophanin@gmail.com",
+      "address": "No. 186 Preah Norodom Blvd (41), Phnom Penh 12302",
+      "partner_link": "https://fisheries-administration.gov.kh/en/",
+      "partner_description": "Innovative solutions for food delivery.",
+      "image": "./image/jolphal.png",
+      "video": "https://www.example.com/video_b"
+    },
+     {
+      "id": 4,
+      "title": "Institute of Technology (ITC)",
+      "phone": "+855 88 242 4698",
+      "email": "phalsophanin@gmail.com",
+      "address": "Russian Conf Norodom Boulevard, Phnom Penh 12302",
+      "partner_link": "https://itc.edu.kh/en/",
+      "partner_description": "Innovative solutions for food delivery.",
+      "image": "./image/itc.png",
+      "video": "https://www.example.com/video_b"
+    },
+     {
+      "id": 5,
+      "title": "Royal University of Agriculture",
+      "phone": "+855 88 242 4698",
+      "email": "phalsophanin@gmail.com",
+      "address": "Sangkat/Khan Dangkor, Phnom Penh, Cambodia",
+      "partner_link": "https://nubb.edu.kh/en/",
+      "partner_description": "Innovative solutions for food delivery.",
+      "image": "./image/Agriculture.png",
+      "video": "https://www.example.com/video_b"
+    },
+     {
+      "id": 6,
+      "title": "Prek Leap National College of Agriculture ",
+      "phone": "+855 88 242 4698",
+      "email": "phalsophanin@gmail.com",
+      "address": "Street 6A Prek Leap Commune,Chhroy Changva Distric, Phnom Penh",
+      "partner_link": "https://nia.edu.kh/index.html",
+      "partner_description": "Innovative solutions for food delivery.",
+      "image": "./image/prekleab.png",
+      "video": "https://www.example.com/video_b"
+    },
+     {
+      "id": 7,
+      "title": "Cambodia Food Manufacturing Association",
+      "phone": "+855 88 242 4698",
+      "email": "phalsophanin@gmail.com",
+      "address": "36P9+GV5, University Rd, Krong Battambang",
+      "partner_link": "https://nubb.edu.kh/en/",
+      "partner_description": "Innovative solutions for food delivery.",
+      "image": "./image/Food.png",
+      "video": "https://www.example.com/video_b"
+    },
+    {
+      "id": 8,
+      "title": "Federation of Associations for Small and Medium Enterprises of Cambodia",
+      "phone": "+855 88 242 4698",
+      "email": "phalsophanin@gmail.com",
+      "address": "36P9+GV5, University Rd, Krong Battambang",
+      "partner_link": "https://nubb.edu.kh/en/",
+      "partner_description": "Innovative solutions for food delivery.",
+      "image": "./image/FASMEC.png",
+      "video": "https://www.example.com/video_b"
+    }
+    
+    
+  ],
+
+  "members": [
+    {
+       "id": 1,
+      "title": "Cambodia Food Manufacturing Association",
+      "phone": "123-456-7890",
+      "email": "phalsophanin@gmail.com",
+      "address": "123 Main St, City, Country",
+      "partner_link": "https://www.partnera.com",
+      "partner_description": "Leading company in food technology.",
+      "image": "./image/SVR.png",
+      "video": "https://www.example.com/video_a"
+    }
+  ],
+  "banners": [
+    {
+      "id": 1,
+      "image": "./image/home_photo.jpg"
+      
+    },
+    {
+      "id": 2,
+      "image": "./image/home_photo2.jpg"
+
+    },
+    {
+      "id": 3,
+      "image": "./image/home_photo.jpg"
+    }
+  ],
+  "events": [
+    {
+      "id": 1,
+      "title": "សាកលវិទ្យាល័យជាតិបាត់ដំបង​ត្រូវបានស្ថាប័នអន្តរជាតិផ្តល់ទំនុកលើការសម្របសម្រួលថ្នាលស្រាវជ្រាវ នវានុវត្តន៍ និងបច្ចេកវិទ្យាអាហារ",
+"description": "អង្គការ UNIDO បានប្រកាសផ្តល់សេចក្តីទុកចិត្តដល់សាកលវិទ្យាល័យជាតិបាត់ដំបង​ (NUBB) តាមរយៈការផ្តល់នូវគម្រោងថ្មីលើការសម្របសម្រួលថ្នាលស្រាវជ្រាវ នវានុវត្តន៍ និងបច្ចេកវិទ្យាអាហារ (FTRIP) ដែលជាយន្តការពហុភាគីបំពេញភារកិច្ចប្រកបដោយប្រសិទិ្ធភាពលើ​ផ្នែកស្រាវជ្រាវនិងអភិវឌ្ឍន៍(R&D) ព្រមទាំងនវានុវត្តន៍ក្នុងអនុវិស័យជលផល​​ក្រោយ​ប្រមូលផល​​ និងក្នុងឧស្សាហកម្ម​កសិម្ហូបអាហារនៅកម្ពុជា ខណៈភារៈជាស្ថាប័នម្ចាស់ផ្ទះថ្មីនេះគឺជាការបើកកាលានុវត្តភាពដ៏ស្រួចស្រាវមួយបន្ថែម​ទៀតដើម្បីពង្រឹងសក្តានុពលរបស់ថ្នាល FTRIP ក្នុងការរួមចំណែកអភិវឌ្ឍឧស្សាហកម្មម្ហូបអាហារនៅកម្ពុជាប្រកបដោយនិរន្តរភាព។ សូមចុច Subscribe Channel Telegram កម្ពុជាថ្មីដើម្បីទទួលបានព័ត៌មានថ្មីៗទាន់ចិត្ត ថ្លែងក្នុងកម្មវិធី​ម្រោង FTRIP នេះត្រូវបានធ្វឡើងកាលពីថ្ងៃទី១៨ ខែកក្កដា ​បណ្ឌិតសេតធីស៊ីថារ៉ាម៉ាថមបាធូប្រធានទីប្រឹក្សាបច្ចេកទេសរបស់អង្គការ UNIDO លើកឡើងថា​FTRIP ត្រូវបានបង្កើតក្រោមគំនិតផ្តួចផ្តើមរបស់គម្រោងអភិវឌ្ឍន៍ជលផលក្រោយប្រមូលផល(CAPFISH-Capture) ដែលគាំទ្រថវិកាដោយសហភាពអឺរ៉ុប​ (EU)​ ​និងអនុវត្តរួមគ្នាដោយ រដ្ឋបាលជលផល នៃក្រសួងកសិកម្ម រុក្ខាប្រមាញ់ និងនេសាទ និងអង្គការ UNIDO សម្រេចបានសមិទិ្ធផលជាដុំកំភួនជាច្រើនឆ្លើយតប​ និងចូលរួមដោះស្រាយបញ្ហាប្រឈមរបស់សហគ្រាស​ជលផលពាក់ព័ន្ធនឹងផលិតកម្មគុណភាពនិង​សុវត្ថិភាពម្ហូបអាហារ។ លោកបានគូសបញ្ជាក់ថា៖ «យើងក៏សូមយកឱកាសនេះថ្លែងអំណរគុណដល់ វិទ្យាស្ថានបច្ចេកវិទ្យាកម្ពុជា (ITC) ដែលជាស្ថាប័នម្ចាស់ផ្ទះដឹកនាំថ្នាល FTRIP​ ប្រកបដោយភាពជោគជ័យនាពេលកន្លងមកហើយក៏ជឿជាក់ថា NUBB ក៏នឹងបន្តដឹកនាំថ្នាលប្រកបដោយផ្លែផ្កាបន្ថែមទៀត»។ អំឡុងពេលកិច្ចប្រជុំគណៈកម្មាធិការតម្រង់ទិសរបស់ថ្នាល FTRIP​ នាថ្ងៃទី១៧ ខែកក្កដា ឆ្នាំ២០២៥ NUBB បានទទួលភារៈជាស្ថាបន័ម្ចាស់ផ្ទះថ្មី បង្ហាញពីការប្តេជ្ញាចិត្ត​ក្នុងការលើកកម្ពស់នវានុវត្តន៍ផ្អែកលើការស្រាវជ្រាវនិងពង្រីកកិច្ចសហការរវាងរដ្ឋ និងឯកជន។",
+      "image": "./image/home_photo.jpg",
+      "video": "https://www.kampucheathmey.com/business-economic/954839",
+      "post_status": "published",
+      "event_status": 1
+    },
+    {
+      "id": 2,
+      "title": "កម្ពុជាពង្រឹងថ្នាលស្រាវជ្រាវ នវានុវត្តន៍ និងបច្ចេកវិទ្យាអាហារ ដើម្បីជំរុញកំណើន",
+     "description": "អង្គការ UNIDO បានប្រកាសផ្តល់សេចក្តីទុកចិត្តដល់សាកលវិទ្យាល័យជាតិបាត់ដំបង​ (NUBB) តាមរយៈការផ្តល់នូវគម្រោងថ្មីលើការសម្របសម្រួលថ្នាលស្រាវជ្រាវ នវានុវត្តន៍ និងបច្ចេកវិទ្យាអាហារ (FTRIP) ដែលជាយន្តការពហុភាគីបំពេញភារកិច្ចប្រកបដោយប្រសិទិ្ធភាពលើ​ផ្នែកស្រាវជ្រាវនិងអភិវឌ្ឍន៍(R&D) ព្រមទាំងនវានុវត្តន៍ក្នុងអនុវិស័យជលផល​​ក្រោយ​ប្រមូលផល​​ និងក្នុងឧស្សាហកម្ម​កសិម្ហូបអាហារនៅកម្ពុជា ខណៈភារៈជាស្ថាប័នម្ចាស់ផ្ទះថ្មីនេះគឺជាការបើកកាលានុវត្តភាពដ៏ស្រួចស្រាវមួយបន្ថែម​ទៀតដើម្បីពង្រឹងសក្តានុពលរបស់ថ្នាល FTRIP ក្នុងការរួមចំណែកអភិវឌ្ឍឧស្សាហកម្មម្ហូបអាហារនៅកម្ពុជាប្រកបដោយនិរន្តរភាព។ សូមចុច Subscribe Channel Telegram កម្ពុជាថ្មីដើម្បីទទួលបានព័ត៌មានថ្មីៗទាន់ចិត្ត ថ្លែងក្នុងកម្មវិធី​ម្រោង FTRIP នេះត្រូវបានធ្វឡើងកាលពីថ្ងៃទី១៨ ខែកក្កដា ​បណ្ឌិតសេតធីស៊ីថារ៉ាម៉ាថមបាធូប្រធានទីប្រឹក្សាបច្ចេកទេសរបស់អង្គការ UNIDO លើកឡើងថា​FTRIP ត្រូវបានបង្កើតក្រោមគំនិតផ្តួចផ្តើមរបស់គម្រោងអភិវឌ្ឍន៍ជលផលក្រោយប្រមូលផល(CAPFISH-Capture) ដែលគាំទ្រថវិកាដោយសហភាពអឺរ៉ុប​ (EU)​ ​និងអនុវត្តរួមគ្នាដោយ រដ្ឋបាលជលផល នៃក្រសួងកសិកម្ម រុក្ខាប្រមាញ់ និងនេសាទ និងអង្គការ UNIDO សម្រេចបានសមិទិ្ធផលជាដុំកំភួនជាច្រើនឆ្លើយតប​ និងចូលរួមដោះស្រាយបញ្ហាប្រឈមរបស់សហគ្រាស​ជលផលពាក់ព័ន្ធនឹងផលិតកម្មគុណភាពនិង​សុវត្ថិភាពម្ហូបអាហារ។ លោកបានគូសបញ្ជាក់ថា៖ «យើងក៏សូមយកឱកាសនេះថ្លែងអំណរគុណដល់ វិទ្យាស្ថានបច្ចេកវិទ្យាកម្ពុជា (ITC) ដែលជាស្ថាប័នម្ចាស់ផ្ទះដឹកនាំថ្នាល FTRIP​ ប្រកបដោយភាពជោគជ័យនាពេលកន្លងមកហើយក៏ជឿជាក់ថា NUBB ក៏នឹងបន្តដឹកនាំថ្នាលប្រកបដោយផ្លែផ្កាបន្ថែមទៀត»។ អំឡុងពេលកិច្ចប្រជុំគណៈកម្មាធិការតម្រង់ទិសរបស់ថ្នាល FTRIP​ នាថ្ងៃទី១៧ ខែកក្កដា ឆ្នាំ២០២៥ NUBB បានទទួលភារៈជាស្ថាបន័ម្ចាស់ផ្ទះថ្មី បង្ហាញពីការប្តេជ្ញាចិត្ត​ក្នុងការលើកកម្ពស់នវានុវត្តន៍ផ្អែកលើការស្រាវជ្រាវនិងពង្រីកកិច្ចសហការរវាងរដ្ឋ និងឯកជន។",
+      "image": "./image/home_photo.jpg",
+      "video": "https://www.misti.gov.kh/pressroom/news-and-events/MtPxnNMmWB4z",
+      "post_status": "published",
+      "event_status": 1
+    },
+    {
+      "id": 3,
+      "title": "NUBB takes over FTRIP leadership to boost innovation in Cambodia’s agro-food industry",
+    "description": "អង្គការ UNIDO បានប្រកាសផ្តល់សេចក្តីទុកចិត្តដល់សាកលវិទ្យាល័យជាតិបាត់ដំបង​ (NUBB) តាមរយៈការផ្តល់នូវគម្រោងថ្មីលើការសម្របសម្រួលថ្នាលស្រាវជ្រាវ នវានុវត្តន៍ និងបច្ចេកវិទ្យាអាហារ (FTRIP) ដែលជាយន្តការពហុភាគីបំពេញភារកិច្ចប្រកបដោយប្រសិទិ្ធភាពលើ​ផ្នែកស្រាវជ្រាវនិងអភិវឌ្ឍន៍(R&D) ព្រមទាំងនវានុវត្តន៍ក្នុងអនុវិស័យជលផល​​ក្រោយ​ប្រមូលផល​​ និងក្នុងឧស្សាហកម្ម​កសិម្ហូបអាហារនៅកម្ពុជា ខណៈភារៈជាស្ថាប័នម្ចាស់ផ្ទះថ្មីនេះគឺជាការបើកកាលានុវត្តភាពដ៏ស្រួចស្រាវមួយបន្ថែម​ទៀតដើម្បីពង្រឹងសក្តានុពលរបស់ថ្នាល FTRIP ក្នុងការរួមចំណែកអភិវឌ្ឍឧស្សាហកម្មម្ហូបអាហារនៅកម្ពុជាប្រកបដោយនិរន្តរភាព។ សូមចុច Subscribe Channel Telegram កម្ពុជាថ្មីដើម្បីទទួលបានព័ត៌មានថ្មីៗទាន់ចិត្ត ថ្លែងក្នុងកម្មវិធី​ម្រោង FTRIP នេះត្រូវបានធ្វឡើងកាលពីថ្ងៃទី១៨ ខែកក្កដា ​បណ្ឌិតសេតធីស៊ីថារ៉ាម៉ាថមបាធូប្រធានទីប្រឹក្សាបច្ចេកទេសរបស់អង្គការ UNIDO លើកឡើងថា​FTRIP ត្រូវបានបង្កើតក្រោមគំនិតផ្តួចផ្តើមរបស់គម្រោងអភិវឌ្ឍន៍ជលផលក្រោយប្រមូលផល(CAPFISH-Capture) ដែលគាំទ្រថវិកាដោយសហភាពអឺរ៉ុប​ (EU)​ ​និងអនុវត្តរួមគ្នាដោយ រដ្ឋបាលជលផល នៃក្រសួងកសិកម្ម រុក្ខាប្រមាញ់ និងនេសាទ និងអង្គការ UNIDO សម្រេចបានសមិទិ្ធផលជាដុំកំភួនជាច្រើនឆ្លើយតប​ និងចូលរួមដោះស្រាយបញ្ហាប្រឈមរបស់សហគ្រាស​ជលផលពាក់ព័ន្ធនឹងផលិតកម្មគុណភាពនិង​សុវត្ថិភាពម្ហូបអាហារ។ លោកបានគូសបញ្ជាក់ថា៖ «យើងក៏សូមយកឱកាសនេះថ្លែងអំណរគុណដល់ វិទ្យាស្ថានបច្ចេកវិទ្យាកម្ពុជា (ITC) ដែលជាស្ថាប័នម្ចាស់ផ្ទះដឹកនាំថ្នាល FTRIP​ ប្រកបដោយភាពជោគជ័យនាពេលកន្លងមកហើយក៏ជឿជាក់ថា NUBB ក៏នឹងបន្តដឹកនាំថ្នាលប្រកបដោយផ្លែផ្កាបន្ថែមទៀត»។ អំឡុងពេលកិច្ចប្រជុំគណៈកម្មាធិការតម្រង់ទិសរបស់ថ្នាល FTRIP​ នាថ្ងៃទី១៧ ខែកក្កដា ឆ្នាំ២០២៥ NUBB បានទទួលភារៈជាស្ថាបន័ម្ចាស់ផ្ទះថ្មី បង្ហាញពីការប្តេជ្ញាចិត្ត​ក្នុងការលើកកម្ពស់នវានុវត្តន៍ផ្អែកលើការស្រាវជ្រាវនិងពង្រីកកិច្ចសហការរវាងរដ្ឋ និងឯកជន។",
+      "image": "./image/home_photo.jpg",
+      "video": "https://www.khmertimeskh.com/501720982/nubb-takes-over-ftrip-leadership-to-boost-innovation-in-cambodias-agro-food-industry/",
+      "post_status": "published",
+      "event_status": 1
+    },
+     {
+      "id": 4,
+      "title": "Cambodia advances food technology, research and innovation platform to drive growth",
+     "description": "អង្គការ UNIDO បានប្រកាសផ្តល់សេចក្តីទុកចិត្តដល់សាកលវិទ្យាល័យជាតិបាត់ដំបង​ (NUBB) តាមរយៈការផ្តល់នូវគម្រោងថ្មីលើការសម្របសម្រួលថ្នាលស្រាវជ្រាវ នវានុវត្តន៍ និងបច្ចេកវិទ្យាអាហារ (FTRIP) ដែលជាយន្តការពហុភាគីបំពេញភារកិច្ចប្រកបដោយប្រសិទិ្ធភាពលើ​ផ្នែកស្រាវជ្រាវនិងអភិវឌ្ឍន៍(R&D) ព្រមទាំងនវានុវត្តន៍ក្នុងអនុវិស័យជលផល​​ក្រោយ​ប្រមូលផល​​ និងក្នុងឧស្សាហកម្ម​កសិម្ហូបអាហារនៅកម្ពុជា ខណៈភារៈជាស្ថាប័នម្ចាស់ផ្ទះថ្មីនេះគឺជាការបើកកាលានុវត្តភាពដ៏ស្រួចស្រាវមួយបន្ថែម​ទៀតដើម្បីពង្រឹងសក្តានុពលរបស់ថ្នាល FTRIP ក្នុងការរួមចំណែកអភិវឌ្ឍឧស្សាហកម្មម្ហូបអាហារនៅកម្ពុជាប្រកបដោយនិរន្តរភាព។ សូមចុច Subscribe Channel Telegram កម្ពុជាថ្មីដើម្បីទទួលបានព័ត៌មានថ្មីៗទាន់ចិត្ត ថ្លែងក្នុងកម្មវិធី​ម្រោង FTRIP នេះត្រូវបានធ្វឡើងកាលពីថ្ងៃទី១៨ ខែកក្កដា ​បណ្ឌិតសេតធីស៊ីថារ៉ាម៉ាថមបាធូប្រធានទីប្រឹក្សាបច្ចេកទេសរបស់អង្គការ UNIDO លើកឡើងថា​FTRIP ត្រូវបានបង្កើតក្រោមគំនិតផ្តួចផ្តើមរបស់គម្រោងអភិវឌ្ឍន៍ជលផលក្រោយប្រមូលផល(CAPFISH-Capture) ដែលគាំទ្រថវិកាដោយសហភាពអឺរ៉ុប​ (EU)​ ​និងអនុវត្តរួមគ្នាដោយ រដ្ឋបាលជលផល នៃក្រសួងកសិកម្ម រុក្ខាប្រមាញ់ និងនេសាទ និងអង្គការ UNIDO សម្រេចបានសមិទិ្ធផលជាដុំកំភួនជាច្រើនឆ្លើយតប​ និងចូលរួមដោះស្រាយបញ្ហាប្រឈមរបស់សហគ្រាស​ជលផលពាក់ព័ន្ធនឹងផលិតកម្មគុណភាពនិង​សុវត្ថិភាពម្ហូបអាហារ។ លោកបានគូសបញ្ជាក់ថា៖ «យើងក៏សូមយកឱកាសនេះថ្លែងអំណរគុណដល់ វិទ្យាស្ថានបច្ចេកវិទ្យាកម្ពុជា (ITC) ដែលជាស្ថាប័នម្ចាស់ផ្ទះដឹកនាំថ្នាល FTRIP​ ប្រកបដោយភាពជោគជ័យនាពេលកន្លងមកហើយក៏ជឿជាក់ថា NUBB ក៏នឹងបន្តដឹកនាំថ្នាលប្រកបដោយផ្លែផ្កាបន្ថែមទៀត»។ អំឡុងពេលកិច្ចប្រជុំគណៈកម្មាធិការតម្រង់ទិសរបស់ថ្នាល FTRIP​ នាថ្ងៃទី១៧ ខែកក្កដា ឆ្នាំ២០២៥ NUBB បានទទួលភារៈជាស្ថាបន័ម្ចាស់ផ្ទះថ្មី បង្ហាញពីការប្តេជ្ញាចិត្ត​ក្នុងការលើកកម្ពស់នវានុវត្តន៍ផ្អែកលើការស្រាវជ្រាវនិងពង្រីកកិច្ចសហការរវាងរដ្ឋ និងឯកជន។",
+      "image": "./image/home_photo.jpg",
+      "video": "https://www.khmersme.gov.kh/en/news/cambodia-advances-food-technology-research-and-innovation-platform-to-drive-growth/",
+      "post_status": "published",
+      "event_status": 1
+    },
+     {
+      "id": 5,
+      "title": "Cambodia Advances Food Technology, Research and Innovation Platform to Drive Growth",
+     "description": "អង្គការ UNIDO បានប្រកាសផ្តល់សេចក្តីទុកចិត្តដល់សាកលវិទ្យាល័យជាតិបាត់ដំបង​ (NUBB) តាមរយៈការផ្តល់នូវគម្រោងថ្មីលើការសម្របសម្រួលថ្នាលស្រាវជ្រាវ នវានុវត្តន៍ និងបច្ចេកវិទ្យាអាហារ (FTRIP) ដែលជាយន្តការពហុភាគីបំពេញភារកិច្ចប្រកបដោយប្រសិទិ្ធភាពលើ​ផ្នែកស្រាវជ្រាវនិងអភិវឌ្ឍន៍(R&D) ព្រមទាំងនវានុវត្តន៍ក្នុងអនុវិស័យជលផល​​ក្រោយ​ប្រមូលផល​​ និងក្នុងឧស្សាហកម្ម​កសិម្ហូបអាហារនៅកម្ពុជា ខណៈភារៈជាស្ថាប័នម្ចាស់ផ្ទះថ្មីនេះគឺជាការបើកកាលានុវត្តភាពដ៏ស្រួចស្រាវមួយបន្ថែម​ទៀតដើម្បីពង្រឹងសក្តានុពលរបស់ថ្នាល FTRIP ក្នុងការរួមចំណែកអភិវឌ្ឍឧស្សាហកម្មម្ហូបអាហារនៅកម្ពុជាប្រកបដោយនិរន្តរភាព។ សូមចុច Subscribe Channel Telegram កម្ពុជាថ្មីដើម្បីទទួលបានព័ត៌មានថ្មីៗទាន់ចិត្ត ថ្លែងក្នុងកម្មវិធី​ម្រោង FTRIP នេះត្រូវបានធ្វឡើងកាលពីថ្ងៃទី១៨ ខែកក្កដា ​បណ្ឌិតសេតធីស៊ីថារ៉ាម៉ាថមបាធូប្រធានទីប្រឹក្សាបច្ចេកទេសរបស់អង្គការ UNIDO លើកឡើងថា​FTRIP ត្រូវបានបង្កើតក្រោមគំនិតផ្តួចផ្តើមរបស់គម្រោងអភិវឌ្ឍន៍ជលផលក្រោយប្រមូលផល(CAPFISH-Capture) ដែលគាំទ្រថវិកាដោយសហភាពអឺរ៉ុប​ (EU)​ ​និងអនុវត្តរួមគ្នាដោយ រដ្ឋបាលជលផល នៃក្រសួងកសិកម្ម រុក្ខាប្រមាញ់ និងនេសាទ និងអង្គការ UNIDO សម្រេចបានសមិទិ្ធផលជាដុំកំភួនជាច្រើនឆ្លើយតប​ និងចូលរួមដោះស្រាយបញ្ហាប្រឈមរបស់សហគ្រាស​ជលផលពាក់ព័ន្ធនឹងផលិតកម្មគុណភាពនិង​សុវត្ថិភាពម្ហូបអាហារ។ លោកបានគូសបញ្ជាក់ថា៖ «យើងក៏សូមយកឱកាសនេះថ្លែងអំណរគុណដល់ វិទ្យាស្ថានបច្ចេកវិទ្យាកម្ពុជា (ITC) ដែលជាស្ថាប័នម្ចាស់ផ្ទះដឹកនាំថ្នាល FTRIP​ ប្រកបដោយភាពជោគជ័យនាពេលកន្លងមកហើយក៏ជឿជាក់ថា NUBB ក៏នឹងបន្តដឹកនាំថ្នាលប្រកបដោយផ្លែផ្កាបន្ថែមទៀត»។ អំឡុងពេលកិច្ចប្រជុំគណៈកម្មាធិការតម្រង់ទិសរបស់ថ្នាល FTRIP​ នាថ្ងៃទី១៧ ខែកក្កដា ឆ្នាំ២០២៥ NUBB បានទទួលភារៈជាស្ថាបន័ម្ចាស់ផ្ទះថ្មី បង្ហាញពីការប្តេជ្ញាចិត្ត​ក្នុងការលើកកម្ពស់នវានុវត្តន៍ផ្អែកលើការស្រាវជ្រាវនិងពង្រីកកិច្ចសហការរវាងរដ្ឋ និងឯកជន។",
+      "image": "./image/home_photo.jpg",
+      "video": "https://www.example.com/event_video1",
+      "post_status": "published",
+      "event_status": 1
+    },
+     {
+      "id": 6,
+      "title": "អនុរដ្ឋលេខាធិការឧស្សាហកម្ម៖ ថ្នាលស្រាវជ្រាវ នវានុវត្តន៍ និងបច្ចេកវិទ្យាអាហារ ជាចលករចម្បងនៃការអភិវឌ្ឍសេដ្ឋកិច្ចរបស់កម្ពុជា",
+     "description": "អង្គការ UNIDO បានប្រកាសផ្តល់សេចក្តីទុកចិត្តដល់សាកលវិទ្យាល័យជាតិបាត់ដំបង​ (NUBB) តាមរយៈការផ្តល់នូវគម្រោងថ្មីលើការសម្របសម្រួលថ្នាលស្រាវជ្រាវ នវានុវត្តន៍ និងបច្ចេកវិទ្យាអាហារ (FTRIP) ដែលជាយន្តការពហុភាគីបំពេញភារកិច្ចប្រកបដោយប្រសិទិ្ធភាពលើ​ផ្នែកស្រាវជ្រាវនិងអភិវឌ្ឍន៍(R&D) ព្រមទាំងនវានុវត្តន៍ក្នុងអនុវិស័យជលផល​​ក្រោយ​ប្រមូលផល​​ និងក្នុងឧស្សាហកម្ម​កសិម្ហូបអាហារនៅកម្ពុជា ខណៈភារៈជាស្ថាប័នម្ចាស់ផ្ទះថ្មីនេះគឺជាការបើកកាលានុវត្តភាពដ៏ស្រួចស្រាវមួយបន្ថែម​ទៀតដើម្បីពង្រឹងសក្តានុពលរបស់ថ្នាល FTRIP ក្នុងការរួមចំណែកអភិវឌ្ឍឧស្សាហកម្មម្ហូបអាហារនៅកម្ពុជាប្រកបដោយនិរន្តរភាព។ សូមចុច Subscribe Channel Telegram កម្ពុជាថ្មីដើម្បីទទួលបានព័ត៌មានថ្មីៗទាន់ចិត្ត ថ្លែងក្នុងកម្មវិធី​ម្រោង FTRIP នេះត្រូវបានធ្វឡើងកាលពីថ្ងៃទី១៨ ខែកក្កដា ​បណ្ឌិតសេតធីស៊ីថារ៉ាម៉ាថមបាធូប្រធានទីប្រឹក្សាបច្ចេកទេសរបស់អង្គការ UNIDO លើកឡើងថា​FTRIP ត្រូវបានបង្កើតក្រោមគំនិតផ្តួចផ្តើមរបស់គម្រោងអភិវឌ្ឍន៍ជលផលក្រោយប្រមូលផល(CAPFISH-Capture) ដែលគាំទ្រថវិកាដោយសហភាពអឺរ៉ុប​ (EU)​ ​និងអនុវត្តរួមគ្នាដោយ រដ្ឋបាលជលផល នៃក្រសួងកសិកម្ម រុក្ខាប្រមាញ់ និងនេសាទ និងអង្គការ UNIDO សម្រេចបានសមិទិ្ធផលជាដុំកំភួនជាច្រើនឆ្លើយតប​ និងចូលរួមដោះស្រាយបញ្ហាប្រឈមរបស់សហគ្រាស​ជលផលពាក់ព័ន្ធនឹងផលិតកម្មគុណភាពនិង​សុវត្ថិភាពម្ហូបអាហារ។ លោកបានគូសបញ្ជាក់ថា៖ «យើងក៏សូមយកឱកាសនេះថ្លែងអំណរគុណដល់ វិទ្យាស្ថានបច្ចេកវិទ្យាកម្ពុជា (ITC) ដែលជាស្ថាប័នម្ចាស់ផ្ទះដឹកនាំថ្នាល FTRIP​ ប្រកបដោយភាពជោគជ័យនាពេលកន្លងមកហើយក៏ជឿជាក់ថា NUBB ក៏នឹងបន្តដឹកនាំថ្នាលប្រកបដោយផ្លែផ្កាបន្ថែមទៀត»។ អំឡុងពេលកិច្ចប្រជុំគណៈកម្មាធិការតម្រង់ទិសរបស់ថ្នាល FTRIP​ នាថ្ងៃទី១៧ ខែកក្កដា ឆ្នាំ២០២៥ NUBB បានទទួលភារៈជាស្ថាបន័ម្ចាស់ផ្ទះថ្មី បង្ហាញពីការប្តេជ្ញាចិត្ត​ក្នុងការលើកកម្ពស់នវានុវត្តន៍ផ្អែកលើការស្រាវជ្រាវនិងពង្រីកកិច្ចសហការរវាងរដ្ឋ និងឯកជន។",
+      "image": "./image/home_photo.jpg",
+      "video": "https://smenews.asia/posts/4300",
+      "post_status": "published",
+      "event_status": 1
+    }
+   
+  ],
+  "services": [
+    {
+      "id": 1,
+      "title": "Food Safety Consultation",
+      "description": "Expert advice on food safety standards and regulations.",
+      "image": "./image/food.png"
+    },
+    {
+      "id": 2,
+      "title": "Packaging Solutions",
+      "description": "Innovative packaging designs to enhance product appeal and sustainability.",
+      "image": "./image/packaging.png"
+    },
+     {
+      "id": 3,
+      "title": "Packaging Solutions",
+      "description": "Innovative packaging designs to enhance product appeal and sustainability.",
+      "image": "./image/packaging.png"
+    },
+     {
+      "id": 4,
+      "title": "Packaging Solutions",
+      "description": "Innovative packaging designs to enhance product appeal and sustainability.",
+      "image": "./image/packaging.png"
+    }
+  ],
+  "publication": [
+    {
+      "id": 1,
+      "title": "Food Safety Consultation",
+      "short_description": "Expert advice on food safety standards and regulations.",
+      "image": "./image/food.png"
+    },
+    {
+      "id": 2,
+      "title": "Packaging Solutions",
+      "short_description": "Innovative packaging designs to enhance product appeal and sustainability.",
+      "image": "./image/packaging.png"
+    },
+     {
+      "id": 3,
+      "title": "Packaging Solutions",
+      "short_description": "Innovative packaging designs to enhance product appeal and sustainability.",
+      "image": "./image/packaging.png"
+    },
+     {
+      "id": 4,
+      "title": "Packaging Solutions",
+      "short_description": "Innovative packaging designs to enhance product appeal and sustainability.",
+      "image": "./image/packaging.png"
+    }
+  ],
+  "research":[
+    {
+      "id": 1,
+      "title": "Food Safety Consultation",
+      "description": "Expert advice on food safety standards andregulations."
+    }
+  ]
+  
+
+  
+}
