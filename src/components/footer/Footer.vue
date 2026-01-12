@@ -1,6 +1,6 @@
 <template>
   <!-- Footer -->
-  <v-footer color="indigo-darken-4" class="py-4">
+  <v-footer color="green-lighten-5" class="py-4">
     <v-container>
       <v-row>
         <!-- Left side: contact info -->

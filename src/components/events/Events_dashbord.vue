@@ -20,7 +20,7 @@
 <script setup>
 import { onMounted, ref } from "vue";
 import axios from "axios";
-import Dashbord from "../home/main_home.vue";
+// import Dashbord from "../home/main_home.vue";
 import Events from "./Event.vue"; 
 import Footer from "../footer/Footer.vue";
 import navbar from "../navbar/navbar.vue";
