@@ -68,7 +68,9 @@ const about_us = ref([]);
 // Fetch About Us API
 const fetchAboutUs = async () => {
   try {
-    const response = await axios.get("https://ftrip.tech/api1/api/abouts");
+
+    const response = await axios.get("https://ftrip.tech/api2/api/abouts");
+
 
     about_us.value = response.data.data;
   } catch (error) {

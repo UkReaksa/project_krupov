@@ -4,7 +4,9 @@
 
     <v-row align="stretch"> <!-- ✅ This makes all columns stretch evenly -->
       <v-col
-        v-for="item in events.slice(0, 3)"
+
+        v-for="item in events.slice(0, 15)"
+
         :key="item.id"
         cols="12"
         sm="6"
@@ -76,7 +78,10 @@ const getImageUrl = (path) => {
   if (!path) return "/image/no-image.png";
   if (path.startsWith("http")) return path;
   const cleanPath = path.replace(/^\/+/, "");
-  return `https://ftrip.tech/storage/${cleanPath}`;
+
+
+  return `https://ftrip.tech/storage2/${cleanPath}`;
+
 };
 
 // Handle broken image
@@ -106,7 +111,9 @@ const formatDate = (dateString) => {
 // Fetch events from API
 const fetchEvents = async () => {
   try {
-    const res = await axios.get("https://ftrip.tech/api1/api/posts");
+
+    const res = await axios.get("https://ftrip.tech/api2/api/posts");
+
     events.value = res.data.data.map((e) => ({
       ...e,
       images: e.images || [],

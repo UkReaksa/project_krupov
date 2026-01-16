@@ -13,8 +13,13 @@
     <!-- Left Logo + Title -->
     <div class="d-flex align-center ml-4">
       <v-img
+<<<<<<< HEAD
         src="/image/ftrip.png"
         alt="FTRIP Logo"
+=======
+        src="/image/agrobio4cam.png"
+        alt="Agrobio4Cam Logo"
+>>>>>>> 67ff534454c639a4d903f6fd15b641d349375c47
         class="mr-2 rounded"
         contain
         width="50"
@@ -22,10 +27,17 @@
       />
       <div class="d-flex flex-column">
         <span class="text-subtitle-2 font-weight-bold line-height-1">
+<<<<<<< HEAD
           FOOD TECHNOLOGY,
         </span>
         <span class="text-subtitle-2 font-weight-bold line-height-1">
           RESEARCH & INNOVATION PLATFORM
+=======
+          អាហ្រ្គូបាយអូហ្វ័រខេម  
+        </span>
+        <span class="text-subtitle-2 font-weight-bold line-height-1">
+          AgroBio4cam
+>>>>>>> 67ff534454c639a4d903f6fd15b641d349375c47
         </span>
       </div>
     </div>
@@ -75,12 +87,21 @@ const drawer = ref(false);
 
 const links = [
   { text: "Home", to: "/" },
+<<<<<<< HEAD
   { text: "Partners", to: "/partner" },
   { text: "Expertise", to: "/expertise_dashbord" },
   { text: "Services", to: "/dashbord_service" },
   { text: "Research", to: "/dadhbord_research" },
   { text: "Events", to: "/events" },
   { text: "Publications", to: "/dadhbord_publication" },
+=======
+  { text: "Products", to: "/events" },
+  // { text: "Partners", to: "/partner" },
+  { text: "News", to: "/dadhbord_publication" },
+  // { text: "Expertise", to: "/expertise_dashbord" },
+  { text: "Services", to: "/dashbord_service" },
+  { text: "Research", to: "/dadhbord_research" },
+>>>>>>> 67ff534454c639a4d903f6fd15b641d349375c47
   { text: "About", to: "/dashbord_about" },
 ];
 

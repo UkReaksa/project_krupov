@@ -42,7 +42,8 @@
 
 <script setup>
 import { ref } from "vue";
-import Dashbord from "./main_home.vue";
+
+// import Dashbord from "./main_home.vue";
 import New_infomation from "./New_infomation.vue";
 import Ftrip_highlights from "./Ftrip_highlights.vue";
 import Footer from "../footer/Footer.vue";

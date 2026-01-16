@@ -1,9 +1,19 @@
 <template>
+<<<<<<< HEAD
   <v-container class="py-10">
+    <div class="mb-6">
+    <v-text-field
+        v-model="searchQuery"
+        label="Search Publications"
+        append-icon="mdi-magnify"
+  
+  <v-container class="py-10">
+     <h1 class="text-h5 font-weight-bold mb-4">NEWS</h1>
     <div class="mb-6">
       <v-text-field
         v-model="searchQuery"
-        label="Search Publications"
+        label="Search News"
+
         append-icon="mdi-magnify"
         outlined
         dense
@@ -36,7 +46,11 @@
         >
           <v-img
             v-if="item.image && item.image.length > 0"
-            :src="`https://ftrip.tech/storage/${item.image[0]}`"
+
+         
+
+            :src="`https://ftrip.tech/storage2/${item.image[0]}`"
+
             height="300px"
             class="rounded-t-lg"
             cover
@@ -93,7 +107,9 @@ const router = useRouter();
 const fetchPublication = async () => {
   try {
     const response = await axios.get(
-      "https://ftrip.tech/api1/api/publications"
+
+      "https://ftrip.tech/api2/api/publications"
+
     );
     publication.value = response.data.data;
   } catch (error) {

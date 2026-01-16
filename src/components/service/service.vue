@@ -1,6 +1,8 @@
 <template>
   <v-container>
-    <h1 class="text-h5 font-weight-bold mb-4">Service</h1>
+
+    <h1 class="text-h5 font-weight-bold mb-4">SERVICES</h1>
+
 
     <v-row>
       <v-col
@@ -17,7 +19,9 @@
           <!-- Image -->
           <v-img
             v-if="item.image && item.image.length"
-            :src="`https://ftrip.tech/storage/${item.image[0]}`"
+
+            :src="`https://ftrip.tech/storage2/${item.image[0]}`"
+
              height="200px"
           
             cover
@@ -47,7 +51,9 @@ const services = ref([]);
 
 const fetchServices = async () => {
   try {
-    const response = await axios.get("https://ftrip.tech/api1/api/services");
+
+    const response = await axios.get("https://ftrip.tech/api2/api/services");
+
     services.value = response.data.data;
   } catch (error) {
     console.error("Error fetching services:", error);

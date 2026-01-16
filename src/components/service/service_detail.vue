@@ -39,7 +39,8 @@
                   :key="idx"
                 >
                   <v-img
-                    :src="`https://ftrip.tech/storage/${img}`"
+         :src="`https://ftrip.tech/storage2/${img}`"
+
                     cover
                     height="500"
                   />
@@ -105,7 +106,9 @@ const navColor = "#05204A";
 const fetchServiceById = async () => {
   try {
     const id = route.params.id;
-    const response = await axios.get(`https://ftrip.tech/api1/api/services/${id}`);
+
+    const response = await axios.get(`https://ftrip.tech/api2/api/services/${id}`);
+
     service.value = response.data.data;
   } catch (error) {
     console.error("Error fetching service detail:", error);
@@ -140,7 +143,9 @@ const descriptionBlocks = computed(() => {
       const [src, ...captionParts] = imgContent.split('|');
       blocks.push({
         type: 'image',
-        src: src.trim().startsWith('http') ? src.trim() : `https://ftrip.tech/storage/${src.trim()}`,
+
+        src: src.trim().startsWith('http') ? src.trim() : `https://ftrip.tech/storage2/${src.trim()}`,
+
         alt: captionParts.join('|').trim() || 'Service Image',
         caption: captionParts.join('|').trim()
       });

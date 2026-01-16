@@ -62,7 +62,8 @@ const events = ref([]);
 
 const fetchEvents = async () => {
   try {
-    const res = await axios.get("https://ftrip.tech/api1/api/events");
+    const res = await axios.get("https://ftrip.tech/api2/api/events");
+
     events.value = res.data;
   } catch (e) {
     console.error("Failed to fetch events", e);

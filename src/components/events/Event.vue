@@ -1,6 +1,10 @@
 <template>
   <v-container>
+<<<<<<< HEAD
     <h1 class="text-h5 font-weight-bold mb-4">All Events</h1>
+=======
+    <h1 class="text-h5 font-weight-bold mb-4">ALL PROUDUCTS</h1>
+>>>>>>> 67ff534454c639a4d903f6fd15b641d349375c47
 
     <!-- 🔍 Search Bar -->
   <v-text-field
@@ -123,7 +127,11 @@ const getImageUrl = (path) => {
   if (!path) return '/image/no-image.png';
   if (path.startsWith('http')) return path;
   const cleanPath = path.replace(/^\/+/, '');
+<<<<<<< HEAD
   return `https://ftrip.tech/storage/${cleanPath}`;
+=======
+  return `https://ftrip.tech/storage2/${cleanPath}`;
+>>>>>>> 67ff534454c639a4d903f6fd15b641d349375c47
 };
 
 // Handle broken image
@@ -148,7 +156,11 @@ const formatDate = (dateString) => {
 // Fetch events
 const fetchEvents = async () => {
   try {
+<<<<<<< HEAD
     const res = await axios.get("https://ftrip.tech/api1/api/posts");
+=======
+    const res = await axios.get("https://ftrip.tech/api2/api/posts");
+>>>>>>> 67ff534454c639a4d903f6fd15b641d349375c47
     events.value = res.data.data.map(e => ({
       ...e,
       images: e.images || [],

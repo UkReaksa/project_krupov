@@ -4,7 +4,11 @@
       <v-row justify="center">
         <v-col cols="12" md="10">
           <h2 class="text-h4 font-weight-bold mb-6" style="color: #05204A;">
+<<<<<<< HEAD
             Research & Innovation
+=======
+            RESEARCHS
+>>>>>>> 67ff534454c639a4d903f6fd15b641d349375c47
           </h2>
 
           <!-- 3 Cards per Row -->
@@ -70,14 +74,22 @@ const service = ref([])
 
 const fetchService = async () => {
   try {
+<<<<<<< HEAD
     const response = await axios.get('https://ftrip.tech/api1/api/service-research-innovations')
+=======
+    const response = await axios.get('https://ftrip.tech/api2/api/service-research-innovations')
+>>>>>>> 67ff534454c639a4d903f6fd15b641d349375c47
     service.value = response.data.data || []
   } catch (error) {
     console.error('Error fetching service data:', error)
   }
 }
 
+<<<<<<< HEAD
 const storageUrl = (path) => `https://ftrip.tech/storage/${path}`
+=======
+const storageUrl = (path) => `https://ftrip.tech/storage2/${path}`
+>>>>>>> 67ff534454c639a4d903f6fd15b641d349375c47
 
 const parseImages = (images) => {
   try {

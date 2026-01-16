@@ -20,7 +20,11 @@
                 <v-card class="mx-auto" max-width="400" elevation="3" @click="goToDetail(item.id)">
                   <v-img
                     v-if="item.image && item.image.length"
+<<<<<<< HEAD
                     :src="`https://ftrip.tech/storage/${item.image[0]}`"
+=======
+                    :src="`https://ftrip.tech/storage2/${item.image[0]}`"
+>>>>>>> 67ff534454c639a4d903f6fd15b641d349375c47
                     height="180px"
                     cover
                     class="rounded-t-lg"
@@ -117,7 +121,11 @@ const services = ref([]);
 // Fetch services from API
 const fetchServices = async () => {
   try {
+<<<<<<< HEAD
     const response = await axios.get("https://ftrip.tech/api1/api/service-research-innovations");
+=======
+    const response = await axios.get("https://ftrip.tech/api2/api/service-research-innovations");
+>>>>>>> 67ff534454c639a4d903f6fd15b641d349375c47
     services.value = response.data.data;
   } catch (error) {
     console.error("Error fetching services:", error);

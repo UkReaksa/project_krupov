@@ -119,7 +119,11 @@ const post = ref({
   videos: []
 });
 
+<<<<<<< HEAD
 const BASE_API_URL = "https://ftrip.tech/api1";
+=======
+const BASE_API_URL = "https://ftrip.tech/api2";
+>>>>>>> 67ff534454c639a4d903f6fd15b641d349375c47
 const id = route.params.id;
 
 const fetchPost = async () => {

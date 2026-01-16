@@ -36,7 +36,11 @@
                 cols="6"
               >
                 <v-img
-                  :src="`https://ftrip.tech/storage/${img}`"
+
+                
+
+                  :src="`https://ftrip.tech/storage2/${img}`"
+
                   height="100"
                   class="rounded"
                   cover
@@ -78,7 +82,9 @@ const loading = ref(true);
 const fetchPublicationById = async () => {
   try {
     const id = route.params.id; // get the id from route
-    const res = await axios.get(`https://ftrip.tech/api1/api/publications/${id}`);
+
+    const res = await axios.get(`https://ftrip.tech/api2/api/publications/${id}`);
+
     publication.value = res.data.data; // assuming API returns {data: {...}}
   } catch (error) {
     console.error("Error fetching publication:", error);

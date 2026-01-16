@@ -68,7 +68,9 @@ const members = ref([]);
 
 const fetchMembers = async () => {
   try {
-    const response = await axios.get("https://ftrip.tech/api1/api/members");
+
+    const response = await axios.get("https://ftrip.tech/api2/api/members");
+
     // ✅ API format: { status: "success", data: [...] }
     members.value = response.data.data;
   } catch (error) {
@@ -79,7 +81,10 @@ const fetchMembers = async () => {
 // ✅ Get image URL from storage
 function getImageUrl(path) {
   if (!path) return "/default.png"; // fallback
-  return `https://ftrip.tech/storage/${path}`;
+
+
+  return `https://ftrip.tech/storage2/${path}`;
+
 }
 
 onMounted(fetchMembers);

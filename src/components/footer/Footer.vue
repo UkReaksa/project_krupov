@@ -1,6 +1,8 @@
 <template>
   <!-- Footer -->
-  <v-footer color="indigo-darken-4" class="py-4">
+
+  <v-footer color="green-lighten-5" class="py-4">
+
     <v-container>
       <v-row>
         <!-- Left side: contact info -->
@@ -69,7 +71,9 @@ const footer = ref({});
 
 onMounted(async () => {
   try {
-    const response = await axios.get("https://ftrip.tech/api1/api/footers");
+
+    const response = await axios.get("https://ftrip.tech/api2/api/footers");
+
     if (response.data.status === "success" && response.data.data.length > 0) {
       footer.value = response.data.data[0];
     }
