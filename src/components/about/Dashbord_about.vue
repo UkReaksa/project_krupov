@@ -2,11 +2,13 @@
   <v-app>
 
     <!-- Main Navbar -->
-      <navbar/>
+    <navbar />
+
     <!-- Main Content -->
     <v-main class="grey lighten-4">
       <v-container fluid class="py-10">
         <v-row>
+
           <!-- Sidebar -->
           <v-col cols="12" md="3">
             <v-card class="rounded-lg pa-4" elevation="2">
@@ -29,23 +31,35 @@
 
           <!-- Main Content -->
           <v-col cols="12" md="9">
-            <v-card class="rounded-lg pa-6" elevation="2 main-content">
-              <section>
-                <h2 class="text-h4 font-weight-bold" :style="{ color: '#05204A' }">
-                  About
-                </h2>
 
-                <!-- Loop through about_us items -->
-                <div v-for="item in about_us" :key="item.id">
-                  <h3 :id="item.id" class="text-h5 font-weight-bold mt-6">
-                    {{ item.title }}
-                  </h3>
-                  <!-- ✅ Render HTML content properly -->
-                  <p class="text-body-1 mt-2" v-html="item.description"></p>
-                </div>
-               
-              </section>
-            </v-card>
+            <!-- 📦 Zoom animation -->
+            <transition name="zoom" appear>
+              <div class="rounded-lg pa-6 main-content" elevation="2">
+                <section>
+
+                  <!-- ✨ Typing title -->
+                  <h2 class="text-h4 font-weight-bold typing-text" :style="{ color: '#05204A' }">
+                    {{ typedText }}
+                  </h2>
+
+                  <!-- ⬅️ Slide left / right sections -->
+                  <div
+                    v-for="(item, index) in about_us"
+                    :key="item.id"
+                    :id="item.id"
+                    :class="index % 2 === 0 ? 'slide-left' : 'slide-right'"
+                    :style="{ animationDelay: (index * 0.2) + 's' }"
+                  >
+                    <h3 class="text-h5 font-weight-bold mt-6">
+                      {{ item.title }}
+                    </h3>
+                    <p class="text-body-1 mt-2" v-html="item.description"></p>
+                  </div>
+
+                </section>
+              </div>
+            </transition>
+
           </v-col>
         </v-row>
       </v-container>
@@ -64,14 +78,27 @@ import navbar from "../navbar/navbar.vue";
 
 const about_us = ref([]);
 
+/* ======================
+   ✨ Typing effect
+====================== */
+const fullText = "About";
+const typedText = ref("");
+let index = 0;
 
-// Fetch About Us API
+function typeEffect() {
+  if (index < fullText.length) {
+    typedText.value += fullText.charAt(index);
+    index++;
+    setTimeout(typeEffect, 120);
+  }
+}
+
+/* ======================
+   API Fetch
+====================== */
 const fetchAboutUs = async () => {
   try {
-
     const response = await axios.get("https://ftrip.tech/api2/api/abouts");
-
-
     about_us.value = response.data.data;
   } catch (error) {
     console.error("Error fetching about us data:", error);
@@ -80,53 +107,72 @@ const fetchAboutUs = async () => {
 
 onMounted(async () => {
   await fetchAboutUs();
+  typeEffect();
 });
 
-// Navbar colors
-const navColor = "#05204A";
-const navColor1 = "#FFFFFF";
-
-// Drawer state
-const drawer = ref(false);
-
-// Smooth scroll to section
+/* ======================
+   Scroll function
+====================== */
 function scrollToSection(id) {
   const element = document.getElementById(id);
   if (element) {
     element.scrollIntoView({ behavior: "smooth" });
   }
 }
-
-
 </script>
 
 <style scoped>
-/* ✅ Import Khmer OS Battambang font */
+/* Khmer font */
 @import url('https://fonts.googleapis.com/css2?family=Battambang:wght@400;700&display=swap');
 
 * {
   font-family: "Battambang", "Khmer OS Battambang", sans-serif;
 }
 
-.line-height-1 {
-  line-height: 1;
+/* ======================
+   📦 Zoom animation
+====================== */
+.zoom-enter-active {
+  transition: all 0.6s ease;
 }
 
-.text-subtitle-2 {
-  font-size: 1.1rem;
+.zoom-enter-from {
+  opacity: 0;
+  transform: scale(0.85);
 }
 
-body {
-  background-color: #f3f4f6;
-  color: #333;
+.zoom-enter-to {
+  opacity: 1;
+  transform: scale(1);
 }
 
-.v-card,
-.v-list-item,
-.v-list-group__header {
-  border-radius: 8px !important;
+/* ======================
+   ⬅️ Slide animations
+====================== */
+.slide-left,
+.slide-right {
+  opacity: 0;
+  animation: slideIn 0.8s ease forwards;
 }
 
+.slide-left {
+  transform: translateX(-40px);
+}
+
+.slide-right {
+  transform: translateX(40px);
+}
+
+@keyframes slideIn {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* ======================
+   Main styles
+====================== */
 .main-content h3 {
   color: #05204A;
 }
@@ -138,15 +184,12 @@ body {
   line-height: 1.6;
 }
 
-
 .main-content ul {
   padding-left: 20px;
   margin-top: 8px;
   margin-bottom: 8px;
   list-style-type: disc;
 }
-
-
 
 .main-content b {
   font-weight: 700;

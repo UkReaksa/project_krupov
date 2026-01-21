@@ -1,7 +1,11 @@
 <template>
   <v-container>
 
-    <h1 class="text-h5 font-weight-bold mb-4">ALL PROUDUCTS</h1>
+    <h1 class="text-h5 font-weight-bold mb-4">
+      {{ typedText }}
+    </h1>
+
+
 
 
     <!-- 🔍 Search Bar -->
@@ -119,6 +123,32 @@ const events = ref([]);
 const showPreview = ref(false);
 const selectedImage = ref("");
 const searchQuery = ref("");
+//write text
+
+const fullText = "ALL PRODUCTS";
+const typedText = ref("");
+let index = 0;
+let isDeleting = false;
+//
+function typeLoop() {
+  if (!isDeleting && index < fullText.length) {
+    typedText.value = fullText.slice(0, index + 1);
+    index++;
+  } else if (isDeleting && index > 0) {
+    typedText.value = fullText.slice(0, index - 1);
+    index--;
+  }
+
+  if (index === fullText.length) {
+    setTimeout(() => (isDeleting = true), 1000);
+  }
+
+  if (isDeleting && index === 0) {
+    isDeleting = false;
+  }
+
+  setTimeout(typeLoop, isDeleting ? 70 : 120);
+}
 
 // Convert storage path to full URL
 const getImageUrl = (path) => {
@@ -193,7 +223,10 @@ const filteredEvents = computed(() => {
   );
 });
 
-onMounted(fetchEvents);
+onMounted(() => {
+  fetchEvents();
+  typeLoop();
+});
 </script>
 
 <style scoped>
@@ -201,11 +234,6 @@ onMounted(fetchEvents);
   cursor: pointer;
 }
 
-/* Red overlay chip for additional images */
-.more-images-chip {
-  position: absolute;
-  top: 8px;
-  right: 8px;
-  font-weight: bold;
-}
+
+
 </style>
