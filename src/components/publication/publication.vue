@@ -1,19 +1,12 @@
 <template>
-<<<<<<< HEAD
   <v-container class="py-10">
-    <div class="mb-6">
-    <v-text-field
-        v-model="searchQuery"
-        label="Search Publications"
-        append-icon="mdi-magnify"
-  
-  <v-container class="py-10">
-     <h1 class="text-h5 font-weight-bold mb-4">NEWS</h1>
+
+    <h1 class="text-h5 font-weight-bold mb-4">NEWS</h1>
+
     <div class="mb-6">
       <v-text-field
         v-model="searchQuery"
         label="Search News"
-
         append-icon="mdi-magnify"
         outlined
         dense
@@ -46,20 +39,16 @@
         >
           <v-img
             v-if="item.image && item.image.length > 0"
-
-         
-
             :src="`https://ftrip.tech/storage2/${item.image[0]}`"
-
             height="300px"
             class="rounded-t-lg"
             cover
           ></v-img>
+
           <div v-else class="no-image-placeholder">No Image Available</div>
 
           <v-card-text>
             <h2 class="font-weight-bold mb-2">{{ item.title }}</h2>
-            <!-- <p class="text-body-1 mb-4">{{ item.short_description }}</p> -->
             <p class="text-body-2 mb-2 description-truncate">
               {{ item.description }}
             </p>
@@ -91,8 +80,10 @@
         </v-card>
       </v-col>
     </v-row>
+
   </v-container>
 </template>
+
 
 <script setup>
 import { ref, onMounted, computed } from "vue";

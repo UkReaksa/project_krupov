@@ -54,11 +54,9 @@ const drawer = ref(false); // Mobile menu state
 
 const fetchPartners = async () => {
   try {
-<<<<<<< HEAD
-    const response = await axios.get('https://ftrip.tech/api1/api/partners');
-=======
+
     const response = await axios.get('https://ftrip.tech/api2/api/partners');
->>>>>>> 67ff534454c639a4d903f6fd15b641d349375c47
+
     index.value = parseInt(route.params.index) || 0; // If no param, default to 0
     partners.value = response.data[index.value];
   } catch (error) {

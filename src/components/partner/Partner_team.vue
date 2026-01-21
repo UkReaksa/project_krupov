@@ -56,11 +56,9 @@ const router = useRouter();
 
 const fetchPartners = async () => {
   try {
-<<<<<<< HEAD
-    const response = await axios.get("https://ftrip.tech/api1/api/partners");
-=======
+
     const response = await axios.get("https://ftrip.tech/api2/api/partners");
->>>>>>> 67ff534454c639a4d903f6fd15b641d349375c47
+
     // ✅ API has structure { status: "success", data: [...] }
     partners.value = response.data.data;
   } catch (error) {
@@ -71,11 +69,9 @@ const fetchPartners = async () => {
 // ✅ Fix image path from storage
 function getImageUrl(path) {
   if (!path) return "/default.png"; // fallback if no image
-<<<<<<< HEAD
-  return `https://ftrip.tech/storage/${path}`;
-=======
+
   return `https://ftrip.tech/storage2/${path}`;
->>>>>>> 67ff534454c639a4d903f6fd15b641d349375c47
+
 }
 
 onMounted(fetchPartners);

@@ -119,11 +119,9 @@ const post = ref({
   videos: []
 });
 
-<<<<<<< HEAD
-const BASE_API_URL = "https://ftrip.tech/api1";
-=======
+
 const BASE_API_URL = "https://ftrip.tech/api2";
->>>>>>> 67ff534454c639a4d903f6fd15b641d349375c47
+
 const id = route.params.id;
 
 const fetchPost = async () => {
@@ -162,7 +160,7 @@ const sanitizedContent = computed(() => {
 const storageUrl = (path) => {
   if (!path) return "https://placehold.co/200x200/cccccc/333333?text=No+Image";
   if (path.startsWith("http")) return path;
-  return `https://ftrip.tech/storage/${path}`;
+  return `https://ftrip.tech/storage2/${path}`;
 };
 
 const getYouTubeEmbedUrl = (url) => {

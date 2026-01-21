@@ -1,7 +1,7 @@
 <template>
   <!-- Footer -->
 
-  <v-footer color="green-lighten-5" class="py-4">
+  <v-footer color="green-lighten-3" class="py-4">
 
     <v-container>
       <v-row>
@@ -58,6 +58,11 @@
         <v-col cols="12" md="6" class="text-caption text-white text-md-right">
           <p v-if="footer.descreptions">{{ footer.descreptions }}</p>
         </v-col>
+        <!-- map -->
+         <v-col>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3886.1496533087857!2d103.2355829!3d13.0897004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3105497f31bbb6f9%3A0x818b93866b1cd30c!2sAgroBio4Cam%20-%20ABC!5e0!3m2!1skm!2skh!4v1768551588386!5m2!1skm!2skh" 
+        width="600" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+         </v-col>
       </v-row>
     </v-container>
   </v-footer>

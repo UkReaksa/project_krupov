@@ -42,7 +42,10 @@
               </p>
               <p class="text-body-1" v-html="truncateContent(item.content, 100)"></p>
             </div>
+            <!-- button redmore and button -->
 
+          <div class="d-flex align-end mt-10">
+          <div>
             <span
               v-if="item.content && item.content.length > 100"
               @click="goToDetail(item.id)"
@@ -51,6 +54,20 @@
             >
               Read more
             </span>
+          </div>
+          <div class=" mx-10">
+            <a
+              href="https://t.me/Uk_reaksa"
+              target="_blank"
+              class="btn btn-primary mt-4 text-decoration-none"
+            >
+              Contact to Telegram
+            </a>
+          </div>
+        </div>
+
+
+
           </v-card-text>
         </v-card>
       </v-col>
@@ -72,6 +89,18 @@ import { marked } from "marked"; // ✅ Markdown parser
 
 const router = useRouter();
 const events = ref([]);
+const loading = ref(true);
+const error = ref(null);
+const link = ref("https://t.me/Uk_reaksa");
+
+// Open Telegram link
+const openTelegram = (link) => {
+  if (link) {
+    window.open(link, "_blank");
+  } else {
+    alert("No Telegram link available for this event.");
+  }
+};
 
 // Convert image path to full URL
 const getImageUrl = (path) => {
