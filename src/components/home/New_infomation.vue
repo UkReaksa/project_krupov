@@ -1,12 +1,13 @@
 <template>
   <v-container>
-    <h1 class="text-h5 font-weight-bold mb-4">All Events</h1>
+    <h1 class="text-h5 font-weight-bold mb-4">
+      {{ typedText }}
+    </h1>
 
-    <v-row align="stretch"> <!-- ✅ This makes all columns stretch evenly -->
+    <v-row align="stretch">
+      <!-- ✅ This makes all columns stretch evenly -->
       <v-col
-
         v-for="item in events.slice(0, 15)"
-
         :key="item.id"
         cols="12"
         sm="6"
@@ -17,7 +18,7 @@
           class="d-flex flex-column w-100"
           variant="outlined"
           elevation="2"
-          style="flex: 1;"
+          style="flex: 1"
         >
           <!-- Image -->
           <v-img
@@ -27,12 +28,7 @@
             cover
             @error="handleImageError"
           />
-          <v-img
-            v-else
-            src="/image/no-image.png"
-            height="200"
-            cover
-          />
+          <v-img v-else src="/image/no-image.png" height="200" cover />
 
           <v-card-text class="flex-grow-1 d-flex flex-column justify-between">
             <div>
@@ -40,34 +36,34 @@
               <p class="text-body-2 text-grey-darken-1 mb-2">
                 {{ formatDate(item.created_at) }}
               </p>
-              <p class="text-body-1" v-html="truncateContent(item.content, 100)"></p>
+              <p
+                class="text-body-1"
+                v-html="truncateContent(item.content, 100)"
+              ></p>
             </div>
             <!-- button redmore and button -->
 
-          <div class="d-flex align-end mt-10">
-          <div>
-            <span
-              v-if="item.content && item.content.length > 100"
-              @click="goToDetail(item.id)"
-              style="color: #05204A; cursor: pointer; font-weight: bold;"
-              class="mt-auto"
-            >
-              Read more
-            </span>
-          </div>
-          <div class=" mx-10">
-            <a
-              href="https://t.me/Uk_reaksa"
-              target="_blank"
-              class="btn btn-primary mt-4 text-decoration-none"
-            >
-              Contact to Telegram
-            </a>
-          </div>
-        </div>
-
-
-
+            <div class="d-flex align-end mt-10">
+              <div>
+                <span
+                  v-if="item.content && item.content.length > 100"
+                  @click="goToDetail(item.id)"
+                  style="color: #05204a; cursor: pointer; font-weight: bold"
+                  class="mt-auto"
+                >
+                  Read more
+                </span>
+              </div>
+              <div class="mx-10">
+                <a
+                  href="https://t.me/ftriptech"
+                  target="_blank"
+                  class="btn btn-primary mt-4 text-decoration-none"
+                >
+                  Contact to Telegram
+                </a>
+              </div>
+            </div>
           </v-card-text>
         </v-card>
       </v-col>
@@ -80,9 +76,8 @@
   </v-container>
 </template>
 
-
 <script setup>
-import { ref, onMounted } from "vue";
+import { ref, onMounted, computed } from "vue";
 import axios from "axios";
 import { useRouter } from "vue-router";
 import { marked } from "marked"; // ✅ Markdown parser
@@ -91,7 +86,34 @@ const router = useRouter();
 const events = ref([]);
 const loading = ref(true);
 const error = ref(null);
-const link = ref("https://t.me/Uk_reaksa");
+const link = ref("https://t.me/ftriptech");
+//write text
+
+const fullText = "ALL PRODUCTS";
+const typedText = ref("");
+let index = 0;
+let isDeleting = false;
+//
+
+function typeLoop() {
+  if (!isDeleting && index < fullText.length) {
+    typedText.value = fullText.slice(0, index + 1);
+    index++;
+  } else if (isDeleting && index > 0) {
+    typedText.value = fullText.slice(0, index - 1);
+    index--;
+  }
+
+  if (index === fullText.length) {
+    setTimeout(() => (isDeleting = true), 1000);
+  }
+
+  if (isDeleting && index === 0) {
+    isDeleting = false;
+  }
+
+  setTimeout(typeLoop, isDeleting ? 70 : 120);
+}
 
 // Open Telegram link
 const openTelegram = (link) => {
@@ -108,9 +130,7 @@ const getImageUrl = (path) => {
   if (path.startsWith("http")) return path;
   const cleanPath = path.replace(/^\/+/, "");
 
-
   return `https://ftrip.tech/storage2/${cleanPath}`;
-
 };
 
 // Handle broken image
@@ -140,7 +160,6 @@ const formatDate = (dateString) => {
 // Fetch events from API
 const fetchEvents = async () => {
   try {
-
     const res = await axios.get("https://ftrip.tech/api2/api/posts");
 
     events.value = res.data.data.map((e) => ({
@@ -157,7 +176,10 @@ const goToDetail = (id) => {
   router.push(`/event/${id}`);
 };
 
-onMounted(fetchEvents);
+onMounted(() => {
+  fetchEvents();
+  typeLoop();
+});
 </script>
 
 <style scoped>

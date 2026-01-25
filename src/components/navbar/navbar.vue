@@ -37,7 +37,7 @@
     <v-spacer />
 
     <!-- Desktop Menu -->
-    <div class="d-none d-md-flex">
+    <div class="d-none d-md-flex mr-10 pt-1 p-4">
       <v-btn
         v-for="link in links"
         :key="link.text"
